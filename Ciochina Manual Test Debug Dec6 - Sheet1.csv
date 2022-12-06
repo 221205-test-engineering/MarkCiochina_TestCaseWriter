@@ -1,0 +1,29 @@
+LOGIN FORM TEST ,,,,,,
+TESTER,REQUIREMENT,TEST SCENARIO,TEST STEPS,RESULT,OUTCOME,DEBUG REPORT
+,Correct credentials work,Correct username and password input,"""username"" and ""password"" used",Login allowed,OK,
+,Incorrect credentials rejected,Incorrect username and password input,"One or both fields left blank, misspelled or improperly capitalized",Warning pops up,OK,
+,,,,,,
+,,,,,,
+SIGN UP FORM TEST,,,,,,
+TESTER,REQUIREMENT,TEST SCENARIO,TEST STEPS,RESULT,OUTCOME,DEBUG REPORT
+,Username follows all guidelines,Username follows all guidelines,"Try multiple 6-10 char usernames including numerals, upper and lower case letters",Username allowed,OK,Special characters allowed
+,6-10 Char in Username,Username too long or short but follows other guidelines,"use ""1aC"" + extra characters to test 4-11 char username lengths",Warning pops up,OK,
+,Username must contain capital letter,Username does not contain capital letters but follows other guidelines,"use ""1ac"" + extra lowercase characters or numbers to test 6-10 char username lengths",Warning pops up,OK,
+,Username must contain lowercase letter,Username does not contain lowercase letter but follows all guidelines,"use ""1AC"" + extra uppercase characters or numbers to test 6-10 char username lengths",Warning pops up,OK,
+,Username must contain number,Username does not contain number,Use upper and lowercase characters to test 6-10 char usernames,Warning pops up,OK,
+,,,,,,
+,Password follows all guidelines,Password follows all guidelines,"Try multiple 6-10 char passwords including numerals, upper and lower case letters",Password allowed,OK,
+,6-10 Char in Password,Password too long or short but follows other guidelines,"use ""1aC"" + extra characters to test 4-11 char passwords",Warning pops up,OK,"Maximum number of characters allowed is 10, impossible to have too many chars"
+,Password must contain capital letter,Password does not contain capital letters but follows other guidelines,"use ""1ac"" + extra lowercase characters or numbers to test 6-10 char passwords",Warning pops up,OK,
+,Password must contain lowercase letter,Password does not contain lowercase letter but follows all guidelines,"use ""1AC"" + extra uppercase characters or numbers to test 6-10 char passwords",Warning pops up,OK,
+,Password must contain number,Password does not contain number,Use upper and lowercase characters to test 6-10 char passwords,Warning pops up,OK,
+,,,,,,
+,Username and password must not match,Username and password do not match,Use two different valid usernames and passwords,Valid combination,OK,
+,Username and password must not match,Username and password are the same,Copy paste the same valid username to password and vice verse,Valid combination,NOT OK,Password and username not checked for similarity
+,,,,,,
+VIEW LEGAL DOC TEST,,,,,,
+TESTER,REQUIREMENT,TEST SCENARIO,TEST STEPS,RESULT,OUTCOME,DEBUG REPORT
+,All requirements met,"First, last name and matching uppercase initials given before clicking continue","Input ""F"" and ""L"" as first and last name and ""FL"" as initials, click continue",Continue clicked succesfully,OK,If you click continue but then go back and delete data from the first or last name fields it will still click successfully
+,First and Last name given,Initials given but one or both name fields left blank,"Input ""F"" or ""L"" or neither as first or last name while ""FL"" entered as initials, click continue",Warning pops up,OK,"Names do not require capitalization, names can contain spaces"
+,Initials match first and last name,"Initials left blank, incorrect, with space in between, or not capitalized","Input blank, ""f"" ""fL"", ""F"", ""Fl"", ... while first and last name were ""F"" and ""L""",Warning pops up,OK,
+,Initials match first and last name,Numbers used at start of first and last name,"Input ""1F"" , "" F"", "" 1F"", ""+L"" for first or last name and matching ""1"", "" "" or ""+"" for respective initial",Continue clicked succesfully,NOT OK (Presumably - technically does match project requirements),"Numbers, whitespace and special char not checked for"
