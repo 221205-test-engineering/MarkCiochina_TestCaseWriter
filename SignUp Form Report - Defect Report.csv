@@ -1,0 +1,2 @@
+DEFECT,DESCRIPTION,STEPS TO REPRODUCE,SEVERITY,PRIORITY
+DEF1,Allows the same string to be used as both username and password,Input valid username as username and password. Eg: Username1,Low,Med

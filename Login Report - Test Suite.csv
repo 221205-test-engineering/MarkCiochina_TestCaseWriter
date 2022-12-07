@@ -1,0 +1,5 @@
+TEST CASE,DESCRIPTION,TEST STEPS,RESULT
+TC-1,Login with correct username and password,"""username"" and ""password"" used as username and password respectively","Credentials accepted, taken to greeting page"
+TC-2,Login with incorrect username,"Username misspelled or improperly capitalized while password correct. Eg: ""usernm"" or ""Username""","Displays warning ""password incorrect"""
+TC-3,Login with incorrect password,"Password misspelled or improperly capitalized while username correct. Eg: ""passwrd"" or ""Password""","Displays warning ""username incorrect"""
+TC-4,Login with incorrect username and password,Username and password both misspelled or improperly capitalized,"Displays warning ""password incorrect"""

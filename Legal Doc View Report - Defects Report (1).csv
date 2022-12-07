@@ -1,0 +1,4 @@
+DEFECT,DESCRIPTION,STEPS TO REPRODUCE,SEVERITY,PRIORITY
+DEF1,All requirements met technically but using inappropriate characters for names and initials,"Fill name forms with numeric or special char at begining and use same chars in order for initials. Eg: name = ""1Bob"", ""@Dylan"", Initials = 1@. Result is valid",High,High
+DEF2,Name forms can be started with numbers or special characters and produce valid entries,"Fill name forms with numeric or special char at begining. Eg: name = "" "", ""1Bob"", ""@Dylan"", or ""  tim""",High,High
+DEF3,Initials can be filled with numbers or special characters as long as they match the first chars of the name fields,"Fill name forms with numeric or special char at begining and use same chars in order for initials. Eg: name = ""1Bob"", ""@Dylan"", Initials = 1@. Result is valid",High,High

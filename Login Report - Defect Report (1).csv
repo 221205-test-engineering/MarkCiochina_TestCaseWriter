@@ -1,0 +1,4 @@
+DEFECT,DESCRIPTION,STEPS,SEVERITY,PRIORITY
+DEF1,"Displays warning ""password incorrect"" when username was incorrect",input incorrect username and correct password,Low,Low
+DEF2,"Displays warning ""username incorrect"" when password was incorrect",input incorrect password and correct username,Low,Low
+DEF3,"Displays warning ""password incorrect"" when both were incorrect",input incorrect password and incorrect username,Low,Low

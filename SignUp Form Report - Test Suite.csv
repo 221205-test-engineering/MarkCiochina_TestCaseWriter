@@ -1,0 +1,23 @@
+TEST CASE,REQUIREMENT DESCRIPTION,TEST STEPS,RESULTS
+TC1,Username follows all guidelines,"Username contains 6-10 char, a number, a capital and lowercase letter",Username allowed
+TC2,Username follows none of the guidelines,"Username does not contain 6-10 char, numbers, or letters",Generic warning pops up
+TC3,Correct number of Char in Username,Username contains 6-10 Char and follows other guidelines,Username allowed
+TC4,Incorrect number of Char in username,"Username too long or short but follows all other guidelines. Eg: username = ""1aC"" or ""1aCandmanymorechar""",Generic warning pops up
+TC5,Username contains capital letter,Username contains capital letters and follows all other guidelines. Eg: user1aC,Username allowed
+TC6,Username does not contain capital letter,Username does not contain capital letters but follows all other guidelines,Generic warning pops up
+TC7,Username contains lowercase letter,"Username contains lowercase letter and follows all other guidelines. Eg: username = ""1aCuser""",Username allowed
+TC8,Username does contain lowercase letter,"Username does not contain lowercase letter but follows all other guidelines. Eg: username = ""1ACUSER""",Generic warning pops up
+TC9,Username contains a number,"Username contains a number and follows all other guidelines. Eg: ""1aCuser""",Username allowed
+TC10,Username must contain number,Username does not contain number but follows all other guidelines. Eg: Username,Generic warning pops up
+TC11,Password follows all guidelines,"Password contains 6-10 char, a number, a capital and lowercase letter",Password allowed
+TC12,Password follows none of the guidelines,"Password does not contain 6-10 Char, numerals or letters. Eg: ""$%^""",Generic warning pops up
+TC13,Correct number of Char in Password,Password contains 6-10 Char and follows all other guidelines,Password allowed
+TC14,Incorrect number of Char in Password,"Password too long or short but follows all other guidelines. Eg: ""Pw1""",Generic warning pops up
+TC15,Password must contain capital letter,Password contains capital letter and follows other guidelines,Password allowed
+TC16,Password does not contain capital letter,"Password does not contain capital letters but follows all other guidelines. Eg: ""password1""",Generic warning pops up
+TC17,Password contains lowercase letter,Password contains lowercase letter and follows all guidelines,Password allowed
+TC18,Password does not contain lowercase letter,Password does not contain lowercase letter but follows all guidelines. Eg: PASSWORD1,Generic warning pops up
+TC19,Password contains number,Password does contains number and follows all other guidelines,Password allowed
+TC20,Password does not contain number,Password does not contain number but follows all other guidelines. Eg: Password,Generic warning pops up
+TC21,Username and password do not match,Username and password do not match,Valid combination
+TC22,Username and password match,Username and password are the same. Eg: Username1 for both,Valid combination

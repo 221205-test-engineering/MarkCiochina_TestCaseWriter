@@ -1,0 +1,10 @@
+TEST CASE,REQUIREMENT DESCRIPTION,TEST STEPS ,RESULTS,
+TC1,All requirements met,"Input first and last name, matching initials and click continue","Inputs accepted, continue clicked successfully",
+TC2,All requirements technically met but innapropriately,"Input first and last name with numbers and special characters to start, and matching intitals","Inputs accepted, continue clicked successfully",DEFECT
+TC3,All requirements not met,"Input first and last names with non-letter first char, non matching initials, non capitalized initirals",Inputs not accepted,
+TC4,First and last name input correctly,Input first and last name starting with letters,Inputs accepted,
+TC5,First and last name input incorrectly with special characters,"Inputs start with number, space, other special character at start of name",Inputs accepted,DEFECT
+TC6,First and last name left blank,Leave on or both fields blank,Inputs not accepted,
+TC7,Initials input correctly,Initials entered as capital letters not separated by a space,Inputs accepted,
+TC8,Initials input incorrectly,"Initials do not match first letter of each name, are not capitalized, contain a space or other char separating them, or left blank",Inputs not accepted,
+TC9,Initials contain numbers or special characters,Initials contain non-letter characters that match the first character of name inputs,Inputs accepted,DEFECT

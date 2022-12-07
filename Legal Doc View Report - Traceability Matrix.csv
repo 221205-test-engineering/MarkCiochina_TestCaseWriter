@@ -1,0 +1,4 @@
+REQUIREMENT,TEST CASES,STATUS,DEFECTS
+All requirements must be passed,"TC1, TC2, TC3, TC4, TC5, TC6, TC7, TC8, TC9","TC1 - Pass, TC2 - Fail, TC3 - Pass, TC4 - Pass, TC5 - Fail, TC6 - Pass, TC7 - Pass, TC8 - Pass, TC9 - Fail","DEF1, DEF2, DEF3"
+User must input first and last name,"TC4, TC5, TC6","TC4 - Pass, TC5 - Fail, TC6 - Pass",DEF2
+User must input matching first chars of first and last name in initials field ,"TC7,TC8, TC9","TC7 - Pass, TC8 - Pass, TC9 - Fail",DEF3
